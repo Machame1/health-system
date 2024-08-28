@@ -1,10 +1,8 @@
 from flask import Flask, request, jsonify, render_template_string
 import json
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.pipeline import make_pipeline
 from textblob import Word
 from difflib import get_close_matches
+import re
 
 app = Flask(__name__)
 
@@ -12,23 +10,28 @@ app = Flask(__name__)
 with open('disease.json') as f:
     diseases_data = json.load(f)
 
-# Prepare the data for the classifier
 symptoms_list = list(diseases_data.keys())
 diseases_list = [diseases_data[key] for key in symptoms_list]
 
-symptom_descriptions = symptoms_list
-labels = [disease["disease"] for disease in diseases_list]
+def split_and_correct_text(text):
+    # Split concatenated words by finding word boundaries using regular expressions
+    text = re.sub(r"([a-z])([A-Z])", r"\1 \2", text)  # Insert space between camel case
+    text = re.sub(r"([a-z])([0-9])", r"\1 \2", text)  # Insert space before numbers
+    text = re.sub(r"([0-9])([a-z])", r"\1 \2", text)  # Insert space after numbers
+    text = re.sub(r"([A-Za-z])(\s+)([A-Za-z])", r"\1 \3", text)  # Remove extra spaces
+    return text
 
-# Create a pipeline with TF-IDF and Naive Bayes classifier
-pipeline = make_pipeline(
-    TfidfVectorizer(),
-    MultinomialNB()
-)
-
-# Train the classifier
-pipeline.fit(symptom_descriptions, labels)
+def correct_spelling(text):
+    # Correct spelling for each word in the text
+    words = text.split()
+    corrected_words = []
+    for word in words:
+        corrected_word = Word(word).correct()
+        corrected_words.append(corrected_word)
+    return ' '.join(corrected_words)
 
 def find_close_matches(input_symptoms):
+    # Attempt to match symptoms with known ones
     words = input_symptoms.split()
     matches = []
     for word in words:
@@ -39,16 +42,14 @@ def find_close_matches(input_symptoms):
             matches.append(word)
     return ' '.join(matches)
 
-def correct_spelling(text):
-    corrected_text = ' '.join([Word(word).correct() for word in text.split()])
-    return corrected_text
-
-def get_similar_diseases(symptom):
-    similar_diseases = []
-    for idx, desc in enumerate(symptom_descriptions):
-        if symptom.lower() in desc.lower():
-            similar_diseases.append(diseases_list[idx])
-    return similar_diseases
+def search_disease_by_symptoms(symptom):
+    # Search for diseases based on corrected and matched symptoms
+    found_diseases = []
+    for disease_symptoms, disease_info in diseases_data.items():
+        # Use partial matching to handle similar but not exact symptoms
+        if re.search(r'\b' + re.escape(symptom.lower()) + r'\b', disease_symptoms.lower()):
+            found_diseases.append(disease_info)
+    return found_diseases
 
 @app.route('/', methods=['GET'])
 def index():
@@ -92,7 +93,7 @@ def index():
       <body>
         <h1>Health Detecting System</h1>
         <form action="/api/check_symptoms" method="post">
-          <label for="symptoms">Enter Symptoms</label><br>
+          <label for="symptoms">Enter Symptoms:</label><br>
           <input type="text" id="symptoms" name="symptoms" required><br><br>
           <input type="submit" value="Check Disease">
         </form>
@@ -105,41 +106,27 @@ def index():
 def check_symptoms():
     input_symptoms = request.form.get('symptoms', '')
     
-    # Correct spelling in input symptoms
-    corrected_symptoms = correct_spelling(input_symptoms)
+    # Split and correct spelling in input symptoms
+    split_corrected_symptoms = split_and_correct_text(input_symptoms)
+    corrected_symptoms = correct_spelling(split_corrected_symptoms)
     
     # Find close matches for symptoms
     matched_symptoms = find_close_matches(corrected_symptoms)
     
-    # Debugging: Print the corrected and matched symptoms
-    print(f"Corrected Symptoms: {corrected_symptoms}")
-    print(f"Matched Symptoms: {matched_symptoms}")
+    # Search for diseases that match the given symptoms
+    matching_diseases = search_disease_by_symptoms(matched_symptoms)
     
-    # Predict the disease using the trained classifier
-    disease_prediction = pipeline.predict([matched_symptoms])[0]
-    
-    # Debugging: Print the disease prediction
-    print(f"Disease Prediction: {disease_prediction}")
-    
-    # Find the index of the predicted disease
-    if disease_prediction in labels:
-        predicted_idx = labels.index(disease_prediction)
-        best_match = diseases_list[predicted_idx]
-    else:
+    # If no diseases are found, return a default message
+    if not matching_diseases:
         best_match = {
             "disease": "No disease found",
             "description": "The given symptoms do not match any known disease.",
-            "medicine": "Not found"
+            "medicine": "N/A"
         }
-    
-    # Find similar diseases
-    similar_diseases = get_similar_diseases(corrected_symptoms)
-    
-    # If no similar diseases are found, add a default message
-    if not similar_diseases:
-        similar_diseases_message = [{"disease": "No similar diseases found", "description": "There are no similar diseases for the given symptoms."}]
+        similar_diseases_message = [{"disease": "No similar diseases found", "description": "There are no similar diseases for the given symptoms.", "medicine": "N/A"}]
     else:
-        similar_diseases_message = [{"disease": disease["disease"], "description": disease["description"]} for disease in similar_diseases]
+        best_match = matching_diseases[0]
+        similar_diseases_message = [{"disease": disease["disease"], "description": disease["description"], "medicine": disease["medicine"]} for disease in matching_diseases if disease["disease"] != best_match["disease"]]
     
     result = {
         "disease": best_match["disease"],
@@ -178,9 +165,6 @@ def check_symptoms():
             margin: 10px 0;
             box-sizing: border-box;
         }
-        input[type=text]:hover{
-        background-color:lightblue;
-        }
         input[type=submit] {
             background-color: #007bff;
             color: white;
@@ -196,6 +180,13 @@ def check_symptoms():
         }
         p {
             font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
         }
         </style>
       </head>
@@ -213,7 +204,7 @@ def check_symptoms():
         <h2>Similar Diseases</h2>
         <ul>
           {% for disease in result['similar_diseases'] %}
-            <li><strong>{{ disease['disease'] }}:</strong> {{ disease['description'] }}</li>
+            <li><u><strong>{{ disease['disease'] }}:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
           {% endfor %}
         </ul>
       </body>
