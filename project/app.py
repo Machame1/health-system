@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template_string
+from flask import Flask, request, jsonify, render_template
 import json
 from textblob import Word
 from difflib import get_close_matches
@@ -6,7 +6,7 @@ import re
 
 app = Flask(__name__)
 
-# Load the diseases data from a JSON file
+
 with open('disease.json') as f:
     diseases_data = json.load(f)
 
@@ -31,7 +31,6 @@ def correct_spelling(text):
     return ' '.join(corrected_words)
 
 def find_close_matches(input_symptoms):
-    # Attempt to match symptoms with known ones
     words = input_symptoms.split()
     matches = []
     for word in words:
@@ -43,64 +42,15 @@ def find_close_matches(input_symptoms):
     return ' '.join(matches)
 
 def search_disease_by_symptoms(symptom):
-    # Search for diseases based on corrected and matched symptoms
     found_diseases = []
     for disease_symptoms, disease_info in diseases_data.items():
-        # Use partial matching to handle similar but not exact symptoms
         if re.search(r'\b' + re.escape(symptom.lower()) + r'\b', disease_symptoms.lower()):
             found_diseases.append(disease_info)
     return found_diseases
 
 @app.route('/', methods=['GET'])
 def index():
-    form_html = '''
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Health Detecting System</title>
-        <style>
-        body{
-            background-color:#f8f9fa;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        h1 {
-            color: #007bff;
-        }
-        label {
-            font-size: 1.2em;
-        }
-        input[type=text] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            box-sizing: border-box;
-        }
-        input[type=submit] {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        input[type=submit]:hover {
-            background-color: #0056b3;
-        }
-        </style>
-      </head>
-      <body>
-        <h1>Health Detecting System</h1>
-        <form action="/api/check_symptoms" method="post">
-          <label for="symptoms">Enter Symptoms:</label><br>
-          <input type="text" id="symptoms" name="symptoms" required><br><br>
-          <input type="submit" value="Check Disease">
-        </form>
-      </body>
-    </html>
-    '''
-    return render_template_string(form_html)
+    return render_template('index.html')
 
 @app.route('/api/check_symptoms', methods=['POST'])
 def check_symptoms():
@@ -132,7 +82,7 @@ def check_symptoms():
         "disease": best_match["disease"],
         "description": best_match["description"],
         "medicine": best_match["medicine"],
-        "similar_diseases": similar_diseases_message
+        "similar_diseases": similar_diseases_message if similar_diseases_message else [{"disease": "No similar diseases found", "description": "There are no similar diseases for the given symptoms.", "medicine": "N/A"}]
     }
     
     # Check if the request expects a JSON response
@@ -140,77 +90,13 @@ def check_symptoms():
         return jsonify(result)
     
     # Otherwise, render the result in HTML
-    form_html = '''
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Health Detecting System</title>
-        <style>
-        body{
-            background-color:#f8f9fa;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        h1 {
-            color: #007bff;
-        }
-        label {
-            font-size: 1.2em;
-        }
-        input[type=text] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            box-sizing: border-box;
-        }
-        input[type=submit] {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        input[type=submit]:hover {
-            background-color: blue;
-        }
-        h2 {
-            color: #343a40;
-        }
-        p {
-            font-size: 1.1em;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 5px 0;
-        }
-        </style>
-      </head>
-      <body>
-        <h1>Health Detecting System</h1>
-        <form action="/api/check_symptoms" method="post">
-          <label for="symptoms">Enter Symptoms:</label><br>
-          <input type="text" id="symptoms" name="symptoms" required><br><br>
-          <input type="submit" value="Check Disease">
-        </form>
-        <h2>Result</h2>
-        <p><strong>Disease:</strong> {{ result['disease'] }}</p>
-        <p><strong>Description:</strong> {{ result['description'] }}</p>
-        <p><strong>Medicine:</strong> {{ result['medicine'] }}</p>
-        <h2>Similar Diseases</h2>
-        <ul>
-          {% for disease in result['similar_diseases'] %}
-            <li><u><strong>{{ disease['disease'] }}:</strong></u> {{ disease['description'] }}<br><strong>Medicine:</strong> {{ disease['medicine'] }}</li>
-          {% endfor %}
-        </ul>
-      </body>
-    </html>
-    '''
-    return render_template_string(form_html, result=result)
+    return render_template('index.html', result=result)
+
+@app.route('/api/symptom_autocomplete', methods=['GET'])
+def symptom_autocomplete():
+    query = request.args.get('query', '').lower()
+    matches = [symptom for symptom in symptoms_list if query in symptom.lower()]
+    return jsonify(matches)
 
 if __name__ == '__main__':
     app.run(debug=True)
