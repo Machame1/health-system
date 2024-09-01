@@ -121,7 +121,7 @@
       <h1>Health Detecting System</h1>
       <form action="/api/check_symptoms" method="post">
         <label for="symptoms">Enter Symptoms:</label>
-        <input type="text" id="symptoms" name="symptoms" placeholder="enter symptoms...." list="symptom-suggestions" oninput="fetchSuggestions()" required>
+        <input type="text" id="symptoms" name="symptoms" placeholder="Enter Symptoms...." list="symptom-suggestions" oninput="fetchSuggestions()" required>
         <button type="button" onclick="clearInput()">Cancel</button>
         <input type="submit" value="Check Disease">
         <datalist id="symptom-suggestions"></datalist>
