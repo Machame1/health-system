@@ -91,9 +91,9 @@
       function fetchSuggestions() {
         var input = document.getElementById('symptoms').value;
         var datalist = document.getElementById('symptom-suggestions');
-        datalist.innerHTML = ''; // Clear previous suggestions
+        datalist.innerHTML = ''; 
 
-        if (input.trim().length > 0) {  // Only fetch suggestions if the input is not empty
+        if (input.trim().length > 0) { 
           var xhr = new XMLHttpRequest();
           xhr.open('GET', '/api/symptom_autocomplete?query=' + encodeURIComponent(input), true);
           xhr.onload = function() {
@@ -121,7 +121,7 @@
       <h1>Health Detecting System</h1>
       <form action="/api/check_symptoms" method="post">
         <label for="symptoms">Enter Symptoms:</label>
-        <input type="text" id="symptoms" name="symptoms" list="symptom-suggestions" oninput="fetchSuggestions()" required>
+        <input type="text" id="symptoms" name="symptoms" placeholder="enter symptoms...." list="symptom-suggestions" oninput="fetchSuggestions()" required>
         <button type="button" onclick="clearInput()">Cancel</button>
         <input type="submit" value="Check Disease">
         <datalist id="symptom-suggestions"></datalist>
@@ -131,7 +131,7 @@
       <form id="google-search-form" method="GET" action="https://www.google.com/search" target="_blank" style="margin-top: 20px;">
         <label for="google-search">Search for an unknown disease:</label>
         <input type="text" id="google-search" name="q" placeholder="Type disease name..." required>
-        <input type="submit" value="Search Google">
+        <input type="submit" value="Search Disease">
       </form>
       
       {% if result %}
