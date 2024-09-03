@@ -479,16 +479,407 @@
     "disease": "Juvenile Idiopathic Arthritis (JIA)",
     "description": "Juvenile idiopathic arthritis is an inflammatory arthritis in children. Symptoms include fever, rash, swelling, and joint pain. It can affect one or more joints and may cause long-term joint damage if untreated.",
     "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs), disease-modifying antirheumatic drugs (DMARDs), and biologics. Physical therapy and regular monitoring are also important."
+},"fever,headache,confusion,skin rash": {
+    "disease": "Kawasaki Disease",
+    "description": "Kawasaki disease is a rare condition that primarily affects children and involves inflammation of blood vessels. Symptoms include fever, headache, confusion, and skin rash.",
+    "medicine": "Treatment typically involves high-dose aspirin and intravenous immunoglobulin (IVIG). Early treatment is crucial to prevent complications such as coronary artery damage."
+},
+"fever,shortness of breath,chest pain,joint pain": {
+    "disease": "Klinefelter Syndrome",
+    "description": "Klinefelter syndrome is a genetic condition in males caused by an extra X chromosome. It can lead to various symptoms, including fever, shortness of breath, chest pain, and joint pain, though it is often associated with infertility and hormonal imbalances.",
+    "medicine": "Treatment focuses on managing symptoms and may include hormone replacement therapy, physical therapy, and fertility treatment if needed."
+},"fever,headache,muscle aches,rash": {
+    "disease": "Legionnaires' Disease",
+    "description": "Legionnaires' disease is a type of pneumonia caused by the Legionella bacteria. Symptoms include fever, headache, muscle aches, and rash. It is often contracted from contaminated water sources.",
+    "medicine": "Antibiotics such as azithromycin or levofloxacin are used to treat Legionnaires' disease. Supportive care including hydration and oxygen therapy may also be necessary."
+},
+"fever,joint pain,skin rash,muscle weakness": {
+    "disease": "Lupus Erythematosus",
+    "description": "Systemic lupus erythematosus (SLE) is an autoimmune disease that can affect multiple organs. Symptoms include fever, joint pain, skin rash, and muscle weakness.",
+    "medicine": "Treatment involves antimalarial drugs, corticosteroids, and immunosuppressive medications. Management also includes regular monitoring and lifestyle adjustments."
+}
+,"fever,abdominal pain,joint pain,skin rash": {
+    "disease": "Meningococcal Disease",
+    "description": "Meningococcal disease is a severe bacterial infection that can lead to meningitis or septicemia. Symptoms include fever, abdominal pain, joint pain, and skin rash.",
+    "medicine": "Immediate treatment with antibiotics such as penicillin or ceftriaxone is essential. Vaccination is also recommended to prevent infection."
+},
+"fever,swollen lymph nodes,weight loss,fatigue": {
+    "disease": "Monoclonal Gammopathy of Undetermined Significance (MGUS)",
+    "description": "Monoclonal gammopathy of undetermined significance is a condition where an abnormal protein is found in the blood. Symptoms can include fever, swollen lymph nodes, weight loss, and fatigue.",
+    "medicine": "Regular monitoring is crucial, as MGUS can sometimes progress to more serious conditions. Treatment focuses on managing symptoms and addressing any complications."
+}
+,"fever,joint pain,swollen lymph nodes,rash": {
+    "disease": "Neuroborreliosis",
+    "description": "Neuroborreliosis is a neurological manifestation of Lyme disease, caused by the bacterium Borrelia burgdorferi. Symptoms include fever, joint pain, swollen lymph nodes, and rash.",
+    "medicine": "Antibiotics such as doxycycline or ceftriaxone are used to treat neuroborreliosis. Early treatment is important to prevent long-term neurological damage."
+},
+
+"fever,headache,muscle pain,joint pain": {
+    "disease": "Osteomyelitis",
+    "description": "Osteomyelitis is an infection of the bone that can be acute or chronic. Symptoms include fever, headache, muscle pain, and joint pain.",
+    "medicine": "Treatment involves antibiotics targeted at the infecting organism and, in some cases, surgical intervention to remove infected tissue. Pain management and supportive care are also important."
+},
+"fever,chronic cough,shortness of breath,weight loss": {
+    "disease": "Onchocerciasis (River Blindness)",
+    "description": "Onchocerciasis, or river blindness, is a parasitic disease caused by Onchocerca volvulus. Symptoms include fever, chronic cough, shortness of breath, and weight loss. It can lead to severe skin and eye complications.",
+    "medicine": "Ivermectin is the primary treatment for onchocerciasis. Community-wide treatment programs are often used to control and prevent the disease."
+}
+,
+"fever,skin rash,joint pain,swollen lymph nodes": {
+    "disease": "Primary Sjögren's Syndrome",
+    "description": "Primary Sjögren's syndrome is an autoimmune disorder characterized by dry mouth and eyes. Symptoms may also include fever, skin rash, joint pain, and swollen lymph nodes.",
+    "medicine": "Management includes symptomatic treatments such as artificial tears and saliva substitutes. Immunosuppressive drugs may be used in more severe cases."
 }
 
+,"fever,skin rash,muscle pain,joint pain": {
+    "disease": "Rocky Mountain Spotted Fever",
+    "description": "Rocky Mountain spotted fever is a tick-borne illness caused by Rickettsia rickettsii. Symptoms include fever, skin rash, muscle pain, and joint pain.",
+    "medicine": "Doxycycline is the primary treatment. Early antibiotic treatment is crucial for preventing severe complications."
+},
 
+"fever,skin rash,swollen lymph nodes,muscle pain": {
+    "disease": "Systemic Sclerosis (Scleroderma)",
+    "description": "Systemic sclerosis, or scleroderma, is an autoimmune disease characterized by the hardening and tightening of skin and connective tissues. Symptoms include fever, skin rash, swollen lymph nodes, and muscle pain.",
+    "medicine": "Treatment focuses on managing symptoms and may include immunosuppressive drugs, corticosteroids, and medications to improve blood flow."
+},
+"fever,cough,chest pain,difficulty breathing": {
+    "disease": "Sarcoidosis",
+    "description": "Sarcoidosis is an inflammatory disease that often affects the lungs and lymph nodes. Symptoms include fever, cough, chest pain, and difficulty breathing.",
+    "medicine": "Treatment may include corticosteroids to reduce inflammation and other immunosuppressive medications if necessary. Regular monitoring and supportive care are important."
+}
+,"fever,headache,joint pain,rash": {
+    "disease": "Typhoid Fever",
+    "description": "Typhoid fever is a bacterial infection caused by Salmonella typhi. Symptoms include fever, headache, joint pain, and rash.",
+    "medicine": "Antibiotics such as ciprofloxacin or azithromycin are used to treat typhoid fever. Supportive care and hydration are also important."
+},
+"fever,cough,chest pain,shortness of breath": {
+    "disease": "Klebsiella Pneumonia",
+    "description": "Klebsiella pneumonia is a type of bacterial pneumonia caused by Klebsiella bacteria. Symptoms include fever, cough, chest pain, and shortness of breath. It can be severe and requires prompt treatment.",
+    "medicine": "Treatment involves antibiotics tailored to the specific bacterial strain. Supportive care, including oxygen therapy, may be necessary for severe cases."
+},"fatigue,joint pain,abdominal pain,diarrhea,weight loss": {
+    "disease": "Addison's Disease",
+    "description": "Addison's disease is a disorder that occurs when the adrenal glands do not produce enough hormones. Symptoms include fatigue, joint pain, abdominal pain, diarrhea, and weight loss.",
+    "medicine": "Treatment involves hormone replacement therapy to correct the levels of steroid hormones the body isn’t producing."
+},
+"nausea,vomiting,severe headache,neck stiffness,confusion": {
+    "disease": "Aseptic Meningitis",
+    "description": "Aseptic meningitis is inflammation of the membranes covering the brain and spinal cord, usually caused by a viral infection. Symptoms include nausea, vomiting, severe headache, neck stiffness, and confusion.",
+    "medicine": "Treatment may include rest, fluids, and pain relievers. Antiviral medication may be required in some cases."
+},
+"shortness of breath,chest pain,coughing up blood,fatigue": {
+    "disease": "Aortic Dissection",
+    "description": "Aortic dissection is a serious condition in which the inner layer of the aorta tears, leading to blood flow between the layers of the aorta wall. Symptoms include shortness of breath, chest pain, coughing up blood, and fatigue.",
+    "medicine": "Treatment often involves emergency surgery or medication to reduce heart rate and blood pressure."
+},
+"fever,cough,chills,muscle pain,shortness of breath": {
+    "disease": "Acute Respiratory Distress Syndrome (ARDS)",
+    "description": "ARDS is a condition in which fluid collects in the lungs' air sacs, depriving organs of oxygen. It is often caused by trauma or infection.",
+    "medicine": "Treatment typically involves oxygen therapy and mechanical ventilation to support breathing."
+},
+"fever,fatigue,joint pain,skin rash,muscle pain": {
+    "disease": "Anaplasmosis",
+    "description": "Anaplasmosis is a tick-borne disease caused by bacteria, leading to symptoms like fever, fatigue, joint pain, skin rash, and muscle pain.",
+    "medicine": "Treatment usually involves antibiotics such as doxycycline."
+},
+"fatigue,shortness of breath,rapid heart rate,pale skin": {
+    "disease": "Aplastic Anemia",
+    "description": "Aplastic anemia is a condition where the bone marrow fails to produce enough blood cells, leading to symptoms like fatigue, shortness of breath, rapid heart rate, and pale skin.",
+    "medicine": "Treatment may involve blood transfusions, bone marrow transplants, or medications to stimulate bone marrow production."
+}
+,"fever,headache,joint pain,muscle pain,skin rash": {
+    "disease": "Babesiosis",
+    "description": "Babesiosis is a malaria-like parasitic disease caused by infection with Babesia, a genus of protozoa. It is transmitted by ticks.",
+    "medicine": "Treatment typically includes a combination of antimicrobial drugs such as atovaquone and azithromycin."
+},
+"fever,weight loss,fatigue,night sweats,abdominal pain": {
+    "disease": "Brucellosis",
+    "description": "Brucellosis is an infectious disease caused by bacteria of the genus Brucella, which spreads from animals to humans.",
+    "medicine": "Treatment usually involves antibiotics like doxycycline and rifampin."
+},
+"fever,sore throat,cough,shortness of breath,chest pain": {
+    "disease": "Bronchitis",
+    "description": "Bronchitis is inflammation of the bronchial tubes, often following a cold or respiratory infection, resulting in a persistent cough.",
+    "medicine": "Treatment includes rest, fluids, pain relievers, and sometimes bronchodilators or antibiotics."
+},
+"fatigue,itchy skin,jaundice,abdominal pain,weight loss": {
+    "disease": "Biliary Atresia",
+    "description": "Biliary atresia is a condition in infants in which the bile ducts outside and inside the liver are scarred and blocked.",
+    "medicine": "Treatment usually involves surgery (Kasai procedure) or liver transplantation."
+},
+"fatigue,weight loss,paleness,bleeding gums,easy bruising": {
+    "disease": "B-Cell Acute Lymphoblastic Leukemia (B-ALL)",
+    "description": "B-ALL is a type of cancer in which the bone marrow makes too many immature white blood cells (B-cell lymphoblasts).",
+    "medicine": "Treatment includes chemotherapy, targeted therapy, and sometimes stem cell transplants."
+},
+"fever,red skin rash,blisters,swelling,skin pain": {
+    "disease": "Bullous Pemphigoid",
+    "description": "Bullous pemphigoid is a rare skin condition that causes large, fluid-filled blisters. It usually affects older adults.",
+    "medicine": "Treatment typically involves corticosteroids and immunosuppressive drugs."
+}
+,"cough,fever,shortness of breath,chest pain,fatigue": {
+    "disease": "Cryptococcosis",
+    "description": "Cryptococcosis is a fungal infection caused by Cryptococcus species, affecting the lungs or the central nervous system.",
+    "medicine": "Treatment usually involves antifungal medications like amphotericin B and fluconazole."
+},
+"fever,weight loss,night sweats,coughing up blood,fatigue": {
+    "disease": "Chronic Pulmonary Aspergillosis",
+    "description": "Chronic pulmonary aspergillosis is a long-term fungal infection that affects the lungs and may develop after a lung disease.",
+    "medicine": "Treatment involves long-term antifungal medication, often itraconazole or voriconazole."
+},
+"fever,joint pain,red eyes,muscle pain,skin rash": {
+    "disease": "Chikungunya",
+    "description": "Chikungunya is a viral disease transmitted by mosquitoes, leading to symptoms such as fever, joint pain, and rash.",
+    "medicine": "There is no specific treatment; supportive care includes rest, fluids, and pain relievers."
+},
+"chest pain,shortness of breath,fatigue,swelling in legs": {
+    "disease": "Cardiomyopathy",
+    "description": "Cardiomyopathy refers to diseases of the heart muscle that make it harder for the heart to pump blood to the rest of the body.",
+    "medicine": "Treatment options include medications, implanted devices, and surgery depending on the type of cardiomyopathy."
+},
 
-
+"itching,swelling,redness,fever,chills": {
+    "disease": "Cellulitis",
+    "description": "Cellulitis is a common bacterial skin infection that causes redness, swelling, and pain in the affected area.",
+    "medicine": "Treatment typically involves antibiotics, either oral or intravenous, depending on the severity."
+},"fever,headache,stiff neck,sensitivity to light,nausea": {
+    "disease": "Dengue Fever",
+    "description": "Dengue fever is a mosquito-borne viral infection causing severe flu-like illness, and sometimes developing into a potentially lethal complication called severe dengue.",
+    "medicine": "There is no specific treatment for dengue fever. Supportive care includes rest, fluids, and pain relievers such as acetaminophen."
+},
+"fever,sore throat,swollen lymph nodes,weakness,rash": {
+    "disease": "Diphtheria",
+    "description": "Diphtheria is a serious bacterial infection affecting the mucous membranes of the throat and nose.",
+    "medicine": "Treatment involves antitoxins and antibiotics like erythromycin or penicillin."
+},
+"frequent urination,extreme thirst,increased hunger,unexplained weight loss,fatigue": {
+    "disease": "Diabetes Mellitus",
+    "description": "Diabetes mellitus is a metabolic disorder characterized by high blood sugar levels over a prolonged period.",
+    "medicine": "Management includes insulin therapy, oral medications, diet, and exercise."
+},
+"abdominal pain,diarrhea,fever,bloody stools,weight loss": {
+    "disease": "Diverticulitis",
+    "description": "Diverticulitis occurs when pouches (diverticula) formed in the wall of the colon become inflamed or infected.",
+    "medicine": "Treatment includes antibiotics, a liquid diet, and in some cases, surgery."
+},
+"chest pain,shortness of breath,dizziness,rapid heart rate,fatigue": {
+    "disease": "Dilated Cardiomyopathy",
+    "description": "Dilated cardiomyopathy is a condition in which the heart's ability to pump blood is decreased because the heart's main pumping chamber is enlarged and weakened.",
+    "medicine": "Treatment involves medications, implanted devices, or surgery, depending on the severity."
+},
+"muscle pain,weakness,stiffness,swelling of muscles,difficulty swallowing": {
+    "disease": "Dermatomyositis",
+    "description": "Dermatomyositis is a rare inflammatory disease marked by muscle weakness and a distinctive skin rash.",
+    "medicine": "Treatment includes corticosteroids, immunosuppressants, and physical therapy."
+},"fever,chills,nausea,vomiting,abdominal pain,yellowing of the skin and eyes": {
+    "disease": "Ebola Virus Disease",
+    "description": "Ebola virus disease is a severe and often fatal illness caused by the Ebola virus. It leads to internal bleeding and organ failure.",
+    "medicine": "Treatment includes supportive care, rehydration, and experimental treatments like monoclonal antibodies."
+},
+"fever,cough,shortness of breath,chest pain,weakness": {
+    "disease": "Empyema",
+    "description": "Empyema is a collection of pus within a naturally existing anatomical cavity, typically the pleural cavity.",
+    "medicine": "Treatment often involves antibiotics and drainage of the infected fluid."
+},
+"fever,fatigue,headache,muscle aches,joint pain,swollen lymph nodes": {
+    "disease": "Epstein-Barr Virus Infection",
+    "description": "Epstein-Barr virus (EBV) is a common virus that causes infectious mononucleosis, also known as glandular fever.",
+    "medicine": "Treatment is usually supportive, including rest, fluids, and over-the-counter pain and fever medications."
+},
+"red eyes,watery eyes,itchy eyes,swollen eyelids": {
+    "disease": "Episcleritis",
+    "description": "Episcleritis is an inflammation of the episclera, the thin layer of tissue covering the white part of the eye.",
+    "medicine": "Treatment may include artificial tears and, in some cases, anti-inflammatory medications."
+},
+"shortness of breath,coughing,wheezing,chest tightness,fatigue": {
+    "disease": "Emphysema",
+    "description": "Emphysema is a chronic lung condition that causes shortness of breath due to over-inflation of the air sacs (alveoli) in the lungs.",
+    "medicine": "Treatment includes bronchodilators, corticosteroids, and oxygen therapy."
+},
+"high fever,headache,vomiting,stiff neck,sensitivity to light": {
+    "disease": "Encephalitis",
+    "description": "Encephalitis is inflammation of the brain, usually due to a viral infection, leading to symptoms like high fever, headache, and stiff neck.",
+    "medicine": "Treatment may involve antiviral medications, corticosteroids, and supportive care."
+},
+"fever,headache,chills,nausea,vomiting,back pain": {
+    "disease": "Filariasis",
+    "description": "Filariasis is a parasitic disease caused by thread-like roundworms and transmitted by mosquitoes.",
+    "medicine": "Treatment typically involves antiparasitic drugs like diethylcarbamazine (DEC) or ivermectin."
+},
+"fatigue,muscle pain,joint pain,sensitivity to cold,headache": {
+    "disease": "Fibromyalgia",
+    "description": "Fibromyalgia is a chronic condition characterized by widespread musculoskeletal pain, fatigue, and tenderness in localized areas.",
+    "medicine": "Treatment includes medications, physical therapy, and lifestyle changes."
+},
+"fever,chest pain,cough,shortness of breath,chills": {
+    "disease": "Fungal Pneumonia",
+    "description": "Fungal pneumonia is an infection of the lungs caused by various types of fungi.",
+    "medicine": "Treatment involves antifungal medications like fluconazole or amphotericin B."
+},
+"pain in the upper right abdomen,nausea,vomiting,fatigue,jaundice": {
+    "disease": "Fatty Liver Disease",
+    "description": "Fatty liver disease is a condition in which excess fat builds up in the liver. It can lead to liver inflammation and scarring.",
+    "medicine": "Treatment includes weight loss, healthy diet, and controlling blood sugar levels."
+},
+"fever,red skin rash,muscle pain,joint pain,headache": {
+    "disease": "Fifth Disease",
+    "description": "Fifth disease is a mild viral infection that often causes a distinctive red rash on the face.",
+    "medicine": "Treatment is usually supportive, including rest, fluids, and over-the-counter pain relievers."
+},
+"skin lesions,bone pain,fever,anemia,swollen lymph nodes": {
+    "disease": "Follicular Lymphoma",
+    "description": "Follicular lymphoma is a type of non-Hodgkin's lymphoma, a cancer of the lymphatic system.",
+    "medicine": "Treatment may involve chemotherapy, immunotherapy, and sometimes radiation therapy."
+},
+"abdominal pain,bloating,diarrhea,flatulence,weight loss": {
+    "disease": "Giardiasis",
+    "description": "Giardiasis is an intestinal infection caused by the protozoan parasite Giardia lamblia, leading to diarrhea and digestive disturbances.",
+    "medicine": "Treatment typically involves antibiotics like metronidazole or tinidazole."
+},
+"fatigue,pale skin,shortness of breath,rapid heart rate,dizziness": {
+    "disease": "G6PD Deficiency",
+    "description": "G6PD deficiency is a genetic disorder that leads to hemolytic anemia, often triggered by certain foods, infections, or medications.",
+    "medicine": "Treatment involves avoiding triggers and, in some cases, blood transfusions."
+},
+"pain and swelling in the joints,especially the big toe,red and warm skin,fever": {
+    "disease": "Gout",
+    "description": "Gout is a form of arthritis characterized by sudden, severe attacks of pain, redness, and tenderness in joints.",
+    "medicine": "Treatment includes medications like nonsteroidal anti-inflammatory drugs (NSAIDs), colchicine, and corticosteroids."
+},
+"fatigue,weight loss,pale skin,shortness of breath,fainting": {
+    "disease": "Gastrointestinal Stromal Tumor (GIST)",
+    "description": "GIST is a type of tumor that occurs in the digestive tract, often presenting as a painless mass or with symptoms of bleeding.",
+    "medicine": "Treatment typically involves surgery, and sometimes targeted therapy with drugs like imatinib."
+},
+"fatigue,weakness,yellowing of the skin and eyes,abdominal pain,nausea": {
+    "disease": "Gilbert's Syndrome",
+    "description": "Gilbert's syndrome is a mild liver disorder where the liver doesn’t properly process bilirubin, leading to jaundice.",
+    "medicine": "No treatment is usually necessary, but managing stress and maintaining a healthy lifestyle is advised."
+},
+"fever,sore throat,red eyes,skin rash,swollen lymph nodes": {
+    "disease": "German Measles (Rubella)",
+    "description": "Rubella, also known as German measles, is a contagious viral infection preventable by vaccine and is characterized by a red rash.",
+    "medicine": "Treatment is usually supportive, including rest and fluids."
+}
+,
+"fever,cough,shortness of breath,fatigue,chills": {
+    "disease": "Hantavirus Pulmonary Syndrome",
+    "description": "Hantavirus pulmonary syndrome (HPS) is a severe respiratory disease in humans caused by infection with hantaviruses.",
+    "medicine": "Treatment is supportive, including oxygen therapy and intensive care."
+},
+"fatigue,weakness,joint pain,yellowing of the skin and eyes,abdominal pain": {
+    "disease": "Hepatitis B",
+    "description": "Hepatitis B is a viral infection that attacks the liver and can cause both acute and chronic disease.",
+    "medicine": "Treatment includes antiviral medications and, in some cases, liver transplantation."
+},
+"fever,headache,muscle aches,swollen lymph nodes,chills": {
+    "disease": "Hantavirus Infection",
+    "description": "Hantavirus infection is a potentially deadly disease transmitted by rodents, leading to hemorrhagic fever with renal syndrome or pulmonary syndrome.",
+    "medicine": "Treatment is supportive and may require intensive care."
+},
+"swelling in the arms and legs,shortness of breath,fatigue,weight gain": {
+    "disease": "Heart Failure",
+    "description": "Heart failure, also known as congestive heart failure, occurs when the heart cannot pump enough blood to meet the body's needs.",
+    "medicine": "Treatment includes lifestyle changes, medications like ACE inhibitors or beta-blockers, and sometimes surgery."
+},
+"nausea,vomiting,loss of appetite,fatigue,jaundice": {
+    "disease": "Hemochromatosis",
+    "description": "Hemochromatosis is an inherited condition in which the body absorbs too much iron from the diet, leading to iron overload and damage to organs.",
+    "medicine": "Treatment involves regular blood removal (phlebotomy) to reduce iron levels."
+},
+"fever,headache,chills,muscle pain,rash": {
+    "disease": "Hemorrhagic Fever",
+    "description": "Hemorrhagic fever is a group of illnesses caused by several types of viruses, leading to severe, life-threatening bleeding, fever, and shock.",
+    "medicine": "Treatment is supportive, including fluid replacement, and sometimes antiviral medications."
+}
+,"fever,chills,muscle pain,cough,chest pain": {
+    "disease": "Influenza",
+    "description": "Influenza (flu) is a viral infection that attacks your respiratory system — your nose, throat, and lungs.",
+    "medicine": "Treatment includes rest, fluids, antiviral medications like oseltamivir, and over-the-counter pain relievers."
+},
+"abdominal pain,diarrhea,weight loss,fever,fatigue": {
+    "disease": "Irritable Bowel Syndrome (IBS)",
+    "description": "IBS is a common disorder that affects the large intestine, causing symptoms like abdominal pain, bloating, and altered bowel habits.",
+    "medicine": "Treatment includes dietary changes, medications to relieve symptoms, and stress management."
+},
+"fever,abdominal pain,diarrhea,vomiting,headache": {
+    "disease": "Intestinal Tuberculosis",
+    "description": "Intestinal tuberculosis is a type of extrapulmonary tuberculosis that affects the gastrointestinal tract.",
+    "medicine": "Treatment involves a long-term course of antibiotics, typically the same as for pulmonary tuberculosis."
+},
+"fever,chills,muscle pain,joint pain,headache": {
+    "disease": "Infectious Mononucleosis",
+    "description": "Infectious mononucleosis, also known as mono, is a viral infection commonly caused by the Epstein-Barr virus, leading to fever, sore throat, and swollen lymph nodes.",
+    "medicine": "Treatment is supportive, including rest, fluids, and over-the-counter pain and fever medications."
+},
+"itching,redness,swelling,blisters,pain": {
+    "disease": "Irritant Contact Dermatitis",
+    "description": "Irritant contact dermatitis is a type of inflammation of the skin caused by exposure to an irritant, leading to itching, redness, and swelling.",
+    "medicine": "Treatment involves avoiding the irritant and using topical corticosteroids to reduce inflammation."
+},
+"fever,sore throat,swollen lymph nodes,rash,fatigue": {
+    "disease": "Idiopathic Thrombocytopenic Purpura (ITP)",
+    "description": "ITP is a disorder that can lead to easy or excessive bruising and bleeding, resulting from unusually low levels of platelets.",
+    "medicine": "Treatment may include corticosteroids, immune globulin, or platelet transfusions."
+}
+,
+"fever,joint pain,muscle pain,skin rash,red eyes": {
+    "disease": "Japanese Encephalitis",
+    "description": "Japanese encephalitis is a viral brain infection spread through mosquito bites, primarily affecting people in Asia.",
+    "medicine": "Treatment is supportive, as there is no specific antiviral therapy for Japanese encephalitis."
+},
+"fever,headache,stiff neck,nausea,vomiting": {
+    "disease": "Joubert Syndrome",
+    "description": "Joubert syndrome is a rare genetic disorder that affects the area of the brain that controls balance and coordination.",
+    "medicine": "Treatment is supportive and focuses on managing symptoms, including physical and occupational therapy."
+},
+"yellowing of the skin and eyes,itchiness,dark urine,fatigue": {
+    "disease": "Jaundice",
+    "description": "Jaundice is a condition in which the skin, whites of the eyes, and mucous membranes turn yellow due to a high level of bilirubin.",
+    "medicine": "Treatment depends on the underlying cause and may include phototherapy, medications, or surgery."
+},
+"joint pain,swelling,redness,stiffness,fatigue": {
+    "disease": "Juvenile Idiopathic Arthritis",
+    "description": "Juvenile idiopathic arthritis (JIA) is the most common type of arthritis in children under the age of 16, causing persistent joint pain, swelling, and stiffness.",
+    "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs), corticosteroids, and disease-modifying antirheumatic drugs (DMARDs)."
+},
+"frequent urination,increased thirst,increased hunger,weight loss,fatigue": {
+    "disease": "Juvenile Diabetes (Type 1 Diabetes)",
+    "description": "Juvenile diabetes, or Type 1 diabetes, is a chronic condition in which the pancreas produces little or no insulin.",
+    "medicine": "Treatment involves insulin therapy, blood sugar monitoring, healthy eating, and exercise."
+},
+"pain in the jaw,swelling,redness,difficulty opening the mouth,fever": {
+    "disease": "Jaw Tumor",
+    "description": "Jaw tumors and cysts are relatively rare lesions that develop in the bones or soft tissues of the jaw, potentially causing pain and swelling.",
+    "medicine": "Treatment may involve surgery, radiation therapy, or chemotherapy, depending on the type and severity of the tumor."
+}
+,"fever,cough,shortness of breath,chest pain,fatigue": {
+    "disease": "Klebsiella Pneumonia",
+    "description": "Klebsiella pneumonia is a type of bacterial pneumonia caused by the Klebsiella pneumoniae bacterium, often leading to severe respiratory symptoms.",
+    "medicine": "Treatment typically involves antibiotics like cephalosporins or carbapenems."
+},
+"fever,swollen lymph nodes,fatigue,weight loss,night sweats": {
+    "disease": "Kaposi Sarcoma",
+    "description": "Kaposi sarcoma is a type of cancer that forms in the lining of blood and lymph vessels, often associated with immunocompromised individuals.",
+    "medicine": "Treatment may include chemotherapy, radiation therapy, or antiretroviral therapy in HIV-positive patients."
+},
+"fever,rash,joint pain,swollen lymph nodes,conjunctivitis": {
+    "disease": "Kawasaki Disease",
+    "description": "Kawasaki disease is a condition that causes inflammation in the walls of some blood vessels in the body, primarily affecting young children.",
+    "medicine": "Treatment includes intravenous immunoglobulin (IVIG) and aspirin to reduce inflammation and prevent heart complications."
+},
+"fever,nausea,vomiting,muscle pain,confusion,swelling of the brain": {
+    "disease": "Kernicterus",
+    "description": "Kernicterus is a rare type of brain damage that can occur in newborns with severe jaundice.",
+    "medicine": "Treatment involves immediate phototherapy or exchange transfusion to reduce bilirubin levels."
+},
+"pain and swelling in the knee,stiffness,redness,limited range of motion": {
+    "disease": "Knee Osteoarthritis",
+    "description": "Knee osteoarthritis is a degenerative joint disease that results from the breakdown of cartilage in the knee joint, leading to pain and stiffness.",
+    "medicine": "Treatment includes pain relievers, physical therapy, and, in some cases, joint replacement surgery."
+}
 
 }
     
-
-
 
 
 
