@@ -4,11 +4,6 @@
         "description": "The common cold is a viral infection of the upper respiratory tract. It is usually caused by rhinoviruses. Symptoms include runny nose, sore throat, cough, congestion, mild body aches, and fever. The cold virus is transmitted through airborne droplets or by direct contact with contaminated surfaces. Although generally mild, it can cause significant discomfort. The illness typically resolves in about a week to ten days. Complications are rare but can include sinus infections or middle ear infections. Rest, hydration, and over-the-counter medications can help alleviate symptoms. Antibiotics are not effective as colds are caused by viruses. Preventive measures include frequent handwashing, avoiding close contact with infected individuals, and maintaining a healthy immune system.",
         "medicine": "Rest, fluids, and over-the-counter cold remedies like decongestants, antihistamines, and pain relievers. Avoiding antibiotics unless prescribed for secondary bacterial infections."
     },
-    "cough,fever,shortness of breath": {
-        "disease": "COVID-19",
-        "description": "COVID-19 is caused by the SARS-CoV-2 virus and primarily affects the respiratory system. Symptoms range from mild to severe and include cough, fever, and shortness of breath. Transmission occurs through respiratory droplets, and the virus can also be spread via contaminated surfaces. The disease has a broad spectrum of severity, from asymptomatic cases to severe pneumonia and death. Individuals with underlying health conditions or the elderly are at higher risk. Preventive measures include vaccination, mask-wearing, physical distancing, and frequent handwashing. Treatment varies based on severity and can include rest, hydration, and antiviral medications. Severe cases may require hospitalization and advanced treatments.",
-        "medicine": "Rest, hydration, and antivirals like remdesivir. Severe cases may require hospitalization, oxygen therapy, and mechanical ventilation. Vaccination is crucial for prevention."
-    },
     "fever,headache,muscle pain,fatigue": {
         "disease": "Influenza (Flu)",
         "description": "Influenza is a contagious respiratory illness caused by influenza viruses. Symptoms include fever, cough, sore throat, muscle aches, headaches, and fatigue. The flu spreads via respiratory droplets and can also be transmitted by touching contaminated surfaces. It can lead to serious complications such as pneumonia, especially in high-risk groups. Annual flu vaccination is the primary prevention method. Treatment includes antiviral medications, rest, hydration, and symptom management with over-the-counter medications. Most people recover within a week or two, but some may experience prolonged symptoms.",
@@ -202,7 +197,294 @@
     "disease": "Chronic Fatigue Syndrome",
     "description": "Chronic fatigue syndrome (CFS) is a complex disorder characterized by persistent, unexplained fatigue that does not improve with rest and worsens with physical or mental activity. Other symptoms can include unintentional weight loss, difficulty sleeping, and fever.",
     "medicine": "There is no specific treatment for CFS. Management focuses on relieving symptoms and may include cognitive behavioral therapy (CBT), medications for pain and sleep disturbances, and lifestyle modifications to balance activity and rest."
+},
+"tremors,slowness,muscle stiffness": {
+        "disease": "Parkinson's Disease",
+        "description": "Parkinson's disease is a progressive neurological disorder that affects movement. It develops gradually, sometimes starting with a barely noticeable tremor in just one hand. Symptoms include tremors, slowness of movement (bradykinesia), muscle stiffness, and impaired balance and coordination. The disease occurs due to the loss of dopamine-producing brain cells. There is no cure, but medications and therapies can help manage symptoms.",
+        "medicine": "Levodopa combined with carbidopa, dopamine agonists like pramipexole, MAO-B inhibitors such as selegiline, and physical therapy to improve mobility and flexibility."
+    },
+    "vision loss,weakness,tingling,numbness": {
+        "disease": "Multiple Sclerosis",
+        "description": "Multiple sclerosis (MS) is an autoimmune disease that affects the central nervous system, leading to a wide range of symptoms including vision loss, muscle weakness, tingling, numbness, and coordination problems. MS occurs when the immune system attacks the protective sheath (myelin) that covers nerve fibers, causing communication issues between the brain and the rest of the body. The disease can progress in different patterns, such as relapsing-remitting or progressive forms.",
+        "medicine": "Disease-modifying therapies (DMTs) like interferon-beta, glatiramer acetate, and natalizumab. Corticosteroids for managing relapses and medications to manage specific symptoms such as muscle relaxants and pain relievers."
+    },
+    "jaundice,fatigue,abdominal pain,nausea": {
+        "disease": "Hepatitis B",
+        "description": "Hepatitis B is a viral infection that affects the liver and can cause both acute and chronic disease. Symptoms include jaundice (yellowing of the skin and eyes), fatigue, abdominal pain, nausea, loss of appetite, and dark urine. The virus is transmitted through contact with infectious body fluids, such as blood, semen, and vaginal secretions. Chronic hepatitis B can lead to liver cirrhosis or liver cancer.",
+        "medicine": "Antiviral medications such as tenofovir and entecavir. In some cases, interferon therapy is used. Vaccination is available for prevention."
+    },
+    "jaundice,loss of appetite,weight loss,fatigue": {
+        "disease": "Hepatitis C",
+        "description": "Hepatitis C is a viral infection that causes liver inflammation, sometimes leading to serious liver damage. Common symptoms include jaundice, loss of appetite, weight loss, fatigue, dark urine, and abdominal pain. It is primarily spread through contact with infected blood. Chronic hepatitis C can result in liver cirrhosis or liver cancer if left untreated.",
+        "medicine": "Direct-acting antiviral (DAA) medications such as sofosbuvir, ledipasvir, and velpatasvir, which can cure most cases of hepatitis C. Supportive care for liver health and management of complications."
+    },
+    "fatigue,weakness,pallor,dizziness": {
+        "disease": "Anemia",
+        "description": "Anemia is a condition in which you lack enough healthy red blood cells to carry adequate oxygen to your body's tissues, resulting in fatigue, weakness, pallor, and dizziness. Causes include iron deficiency, vitamin B12 deficiency, chronic diseases, or genetic disorders like sickle cell anemia. Treatment depends on the underlying cause.",
+        "medicine": "Iron supplements for iron deficiency anemia, vitamin B12 injections or oral supplements for B12 deficiency anemia, and medications or treatments for underlying conditions causing anemia."
+    },
+    "persistent cough,mucus production,shortness of breath,wheezing": {
+        "disease": "Bronchitis",
+        "description": "Bronchitis is the inflammation of the bronchial tubes, which carry air to and from the lungs. Acute bronchitis is usually caused by viral infections and is characterized by a persistent cough, mucus production, shortness of breath, and wheezing. Chronic bronchitis, a form of chronic obstructive pulmonary disease (COPD), involves ongoing inflammation and is often caused by smoking.",
+        "medicine": "For acute bronchitis: rest, fluids, and over-the-counter pain relievers. In some cases, cough suppressants or bronchodilators. For chronic bronchitis: bronchodilators, inhaled steroids, and lifestyle changes such as quitting smoking."
+    },
+    "high blood pressure,headaches,blurred vision,chest pain": {
+        "disease": "Hypertension",
+        "description": "Hypertension, or high blood pressure, is a condition in which the force of the blood against the artery walls is too high. It can lead to serious health issues such as heart disease, stroke, and kidney problems. Symptoms may include headaches, blurred vision, chest pain, and shortness of breath, though it often has no symptoms.",
+        "medicine": "Medications include diuretics, ACE inhibitors like lisinopril, beta-blockers like metoprolol, calcium channel blockers like amlodipine, and angiotensin II receptor blockers (ARBs) such as losartan. Lifestyle changes such as diet, exercise, and reducing sodium intake are also important."
+    },
+    "memory loss,confusion,mood changes,behavioral issues": {
+        "disease": "Alzheimer's Disease",
+        "description": "Alzheimer's disease is a progressive neurodegenerative disorder that causes memory loss, confusion, mood changes, and behavioral issues. It is the most common cause of dementia among older adults. The disease involves the buildup of amyloid plaques and tau tangles in the brain, leading to the death of brain cells and loss of cognitive functions.",
+        "medicine": "Cholinesterase inhibitors like donepezil, rivastigmine, and galantamine. NMDA receptor antagonist memantine may also be used. Current treatments focus on managing symptoms as there is no cure."
+    },
+    "widespread musculoskeletal pain,fatigue,sleep disturbances": {
+        "disease": "Fibromyalgia",
+        "description": "Fibromyalgia is a chronic condition characterized by widespread musculoskeletal pain, fatigue, sleep disturbances, and often emotional or mental distress. The exact cause is unknown, but it is believed to involve abnormal pain perception processing in the brain. Symptoms can be triggered or worsened by stress, physical activity, or changes in weather.",
+        "medicine": "Medications include pain relievers, antidepressants like duloxetine and milnacipran, and anti-seizure drugs like pregabalin. Additionally, exercise, stress management techniques, and cognitive behavioral therapy (CBT) can help manage symptoms."
+    },
+    "chronic dry cough,shortness of breath,fatigue": {
+    "disease": "Interstitial Lung Disease",
+    "description": "Interstitial lung disease (ILD) refers to a group of disorders that cause progressive scarring of lung tissue. Symptoms often include a chronic dry cough, shortness of breath, and fatigue. ILD can be caused by various factors including autoimmune diseases, occupational exposures, and certain medications.",
+    "medicine": "Treatment focuses on managing symptoms and may include corticosteroids, immunosuppressive medications, and oxygen therapy. Managing underlying causes and lifestyle modifications may also be beneficial."
+},
+"muscle weakness,tingling,numbness,vision problems": {
+    "disease": "Myasthenia Gravis",
+    "description": "Myasthenia gravis is an autoimmune disorder that causes weakness in the skeletal muscles. Symptoms include muscle weakness, tingling, numbness, and sometimes vision problems such as double vision or drooping eyelids. It affects the communication between nerves and muscles.",
+    "medicine": "Treatment options include anticholinesterase medications like pyridostigmine, immunosuppressants such as corticosteroids, and thymectomy. Plasmapheresis or intravenous immunoglobulin (IVIG) may be used for acute exacerbations."
+},
+"painful rash,fever,blisters,headache": {
+    "disease": "Herpes Simplex Virus (HSV) Infection",
+    "description": "Herpes simplex virus infection is characterized by painful blisters or sores, typically on the mouth or genital area, along with fever and headache. It can be recurrent and is spread through direct contact with an infected person.",
+    "medicine": "Antiviral medications such as acyclovir, valacyclovir, or famciclovir can help reduce the severity and duration of outbreaks. Pain relief medications and topical treatments may also be used."
+},
+"severe abdominal pain,diarrhea,fever": {
+    "disease": "Gastroenteritis",
+    "description": "Gastroenteritis is inflammation of the stomach and intestines often caused by viral or bacterial infections. Symptoms include severe abdominal pain, diarrhea, and fever. It can be caused by contaminated food or water.",
+    "medicine": "Treatment includes staying hydrated, rest, and medications to manage symptoms such as anti-nausea drugs or antidiarrheals. Antibiotics may be needed if a bacterial cause is identified."
+},
+"extreme thirst,fatigue,frequent urination,dry skin": {
+    "disease": "Diabetic Ketoacidosis (DKA)",
+    "description": "Diabetic ketoacidosis is a serious complication of diabetes where the body starts breaking down fats at an excessive rate, leading to high blood sugar levels and ketones in the urine. Symptoms include extreme thirst, fatigue, frequent urination, and dry skin.",
+    "medicine": "Immediate treatment includes intravenous fluids, insulin therapy to lower blood glucose levels, and electrolyte replacement. Monitoring and adjusting insulin therapy are crucial for managing DKA."
+},
+"swollen,red,stiff joints,pain": {
+    "disease": "Psoriatic Arthritis",
+    "description": "Psoriatic arthritis is an inflammatory arthritis associated with psoriasis. Symptoms include swollen, red, and stiff joints, and pain. It can affect any part of the body and can lead to joint damage if not treated.",
+    "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs), disease-modifying antirheumatic drugs (DMARDs) like methotrexate, and biologic agents. Topical treatments for psoriasis and physical therapy may also be beneficial."
+},
+"persistent stomach pain,nausea,vomiting,loss of appetite": {
+    "disease": "Peptic Ulcer Disease",
+    "description": "Peptic ulcer disease is characterized by sores that develop on the lining of the stomach, small intestine, or esophagus. Symptoms include persistent stomach pain, nausea, vomiting, and loss of appetite. It is often caused by infection with Helicobacter pylori or the use of nonsteroidal anti-inflammatory drugs (NSAIDs).",
+    "medicine": "Treatment typically involves medications to reduce stomach acid such as proton pump inhibitors (PPIs), antibiotics if H. pylori is present, and antacids. Avoiding NSAIDs and managing stress are also recommended."
+},
+"painful urination,fever,back pain,nausea": {
+    "disease": "Pyelonephritis",
+    "description": "Pyelonephritis is a type of urinary tract infection that affects the kidneys. Symptoms include painful urination, fever, back pain, and nausea. It can be caused by bacteria traveling up the urinary tract from the bladder.",
+    "medicine": "Treatment involves antibiotics to treat the infection and analgesics for pain management. Severe cases may require hospitalization for intravenous antibiotics and fluids."
+},
+"persistent joint pain,fatigue,swollen lymph nodes,fever": {
+    "disease": "Systemic Juvenile Idiopathic Arthritis",
+    "description": "Systemic juvenile idiopathic arthritis (SJIA) is an inflammatory condition in children that affects the joints and can also involve systemic symptoms such as fever and swollen lymph nodes. It may lead to persistent joint pain and fatigue.",
+    "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs), disease-modifying antirheumatic drugs (DMARDs) like methotrexate, and biologics. Corticosteroids may be used for severe symptoms."
+},
+"loss of muscle mass,weakness,fatigue,weight loss": {
+    "disease": "Cachexia",
+    "description": "Cachexia is a complex syndrome associated with underlying illness, characterized by loss of muscle mass, weakness, fatigue, and weight loss. It is often seen in chronic conditions such as cancer, chronic heart failure, and chronic obstructive pulmonary disease (COPD).",
+    "medicine": "Management focuses on treating the underlying disease, nutritional support, and sometimes medications such as appetite stimulants or anabolic agents to help improve muscle mass and overall strength."
+},
+"shortness of breath,chest pain,cough,swelling in legs": {
+    "disease": "Congestive Heart Failure",
+    "description": "Congestive heart failure occurs when the heart is unable to pump blood effectively, leading to symptoms such as shortness of breath, chest pain, cough, and swelling in the legs. It is often a result of other conditions such as coronary artery disease or hypertension.",
+    "medicine": "Treatment includes diuretics to reduce fluid buildup, ACE inhibitors to lower blood pressure, beta-blockers to improve heart function, and lifestyle changes such as diet and exercise. In severe cases, advanced therapies or surgery may be required."
+},
+
+
+"headache,visual disturbances,nausea,neck stiffness": {
+    "disease": "Meningitis",
+    "description": "Meningitis is an inflammation of the protective membranes covering the brain and spinal cord. Symptoms include headache, visual disturbances, nausea, and neck stiffness. It can be caused by bacterial, viral, or fungal infections.",
+    "medicine": "Treatment depends on the cause of meningitis. Bacterial meningitis requires prompt antibiotic treatment, while viral meningitis often improves on its own with supportive care. Corticosteroids may be used to reduce inflammation."
+},
+
+"abdominal bloating,gas,constipation,diarrhea": {
+    "disease": "Irritable Bowel Syndrome (IBS)",
+    "description": "Irritable bowel syndrome is a functional gastrointestinal disorder characterized by abdominal bloating, gas, constipation, and diarrhea. It is often influenced by stress and dietary factors.",
+    "medicine": "Management includes dietary modifications, such as a low-FODMAP diet, stress reduction techniques, and medications to relieve specific symptoms, such as antispasmodics or laxatives."
+},
+
+"painful,swollen joints,fever,rash": {
+    "disease": "Systemic Lupus Erythematosus (SLE)",
+    "description": "Systemic lupus erythematosus is an autoimmune disease where the immune system attacks healthy tissues. Symptoms include painful, swollen joints, fever, and a characteristic rash. It can affect various organs, including the skin, kidneys, and heart.",
+    "medicine": "Treatment includes medications to manage symptoms and prevent flare-ups, such as corticosteroids, antimalarials, and immunosuppressants. Regular monitoring and lifestyle modifications are also important."
+},
+"chronic fatigue,headache,sleep disturbances,unexplained muscle pain": {
+    "disease": "Fibromyalgia",
+    "description": "Fibromyalgia is a chronic condition characterized by widespread muscle pain, fatigue, and sleep disturbances. The exact cause is unknown, but it is thought to involve abnormal pain processing in the brain and nervous system.",
+    "medicine": "Treatment focuses on managing symptoms and may include medications such as pain relievers, antidepressants, and anti-seizure drugs. Physical therapy, cognitive behavioral therapy, and lifestyle changes can also help manage symptoms."
+},"swelling of the extremities,shortness of breath,fatigue,rapid weight gain": {
+    "disease": "Congestive Heart Failure",
+    "description": "Congestive heart failure is a condition in which the heart is unable to pump effectively, leading to fluid accumulation in the lungs and other tissues. Symptoms include swelling of the extremities, shortness of breath, fatigue, and rapid weight gain due to fluid retention.",
+    "medicine": "Treatment involves diuretics to reduce fluid buildup, ACE inhibitors or ARBs to lower blood pressure, and beta-blockers to improve heart function. Lifestyle changes and managing underlying conditions are also crucial."
+},"joint pain,skin rash,fatigue,fever": {
+    "disease": "Systemic Lupus Erythematosus (SLE)",
+    "description": "Systemic lupus erythematosus (SLE) is an autoimmune disease that can affect multiple organ systems. Symptoms include joint pain, skin rash (often a butterfly-shaped rash across the cheeks), fatigue, and fever. It can cause inflammation and damage to various organs.",
+    "medicine": "Treatment typically includes corticosteroids and immunosuppressive drugs to control inflammation, along with medications to manage specific symptoms. Regular monitoring and lifestyle modifications are also important."
+},"severe chest pain,shortness of breath,diaphoresis,nausea": {
+    "disease": "Myocardial Infarction (Heart Attack)",
+    "description": "A myocardial infarction, commonly known as a heart attack, occurs when blood flow to the heart muscle is obstructed, leading to severe chest pain, shortness of breath, diaphoresis (sweating), and nausea. It is a medical emergency.",
+    "medicine": "Immediate treatment includes aspirin to prevent further clotting, thrombolytics or angioplasty to restore blood flow, and medications such as beta-blockers, ACE inhibitors, and statins. Long-term management involves lifestyle changes and possibly surgical interventions."
+},"red,itchy skin rash,blisters,dry skin,swelling": {
+    "disease": "Eczema (Atopic Dermatitis)",
+    "description": "Eczema, also known as atopic dermatitis, is a chronic skin condition that causes red, itchy, and inflamed skin. It can also lead to blisters, dry skin, and swelling. It is often associated with other atopic conditions like asthma or hay fever.",
+    "medicine": "Treatment includes topical corticosteroids to reduce inflammation, moisturizers to prevent dryness, and antihistamines to relieve itching. Avoiding known triggers and irritants is also important."
+},"swollen and tender lymph nodes,fatigue,fever,night sweats": {
+    "disease": "Lymphoma",
+    "description": "Lymphoma is a type of cancer that affects the lymphatic system. Symptoms include swollen and tender lymph nodes, fatigue, fever, and night sweats. It can be classified into Hodgkin lymphoma and non-Hodgkin lymphoma, each with different treatment approaches.",
+    "medicine": "Treatment may involve chemotherapy, radiation therapy, targeted therapies, or immunotherapy, depending on the type and stage of lymphoma. Supportive care and regular monitoring are also important."
+},"unexplained weight loss,fatigue,frequent infections,persistent cough": {
+    "disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "description": "Chronic obstructive pulmonary disease (COPD) is a progressive lung disease that causes obstructed airflow and breathing difficulties. Symptoms include unexplained weight loss, fatigue, frequent infections, and a persistent cough, often producing mucus.",
+    "medicine": "Treatment includes bronchodilators and inhaled corticosteroids to manage symptoms, along with lifestyle changes such as smoking cessation and pulmonary rehabilitation. Oxygen therapy may be necessary for advanced cases."
+},"joint stiffness,fatigue,painful swelling,fever": {
+    "disease": "Rheumatoid Arthritis",
+    "description": "Rheumatoid arthritis is an autoimmune disorder that primarily affects the joints, causing joint stiffness, pain, swelling, and fatigue. It can lead to joint damage if not managed properly.",
+    "medicine": "Treatment includes disease-modifying antirheumatic drugs (DMARDs) like methotrexate, biological agents, and nonsteroidal anti-inflammatory drugs (NSAIDs) to manage symptoms and slow disease progression."
+},"severe abdominal pain,fever,vomiting,jaundice": {
+    "disease": "Hepatitis",
+    "description": "Hepatitis is inflammation of the liver often caused by viral infections. Symptoms include severe abdominal pain, fever, vomiting, and jaundice (yellowing of the skin and eyes).",
+    "medicine": "Treatment varies depending on the type of hepatitis. It may include antiviral medications, lifestyle changes, and monitoring of liver function. Vaccines are available for hepatitis A and B."
+},
+"confusion,disorientation,weakness,fever": {
+    "disease": "Encephalitis",
+    "description": "Encephalitis is inflammation of the brain caused by infections or autoimmune responses. Symptoms include confusion, disorientation, weakness, and fever. It can be life-threatening if not treated promptly.",
+    "medicine": "Treatment typically involves antiviral or antibiotic medications depending on the cause, along with supportive care such as fluids and pain relief. Corticosteroids may be used to reduce inflammation."
+}, "abdominal swelling,pain,nausea,loss of appetite": {
+    "disease": "Ascites",
+    "description": "Ascites is the accumulation of fluid in the abdominal cavity, often due to liver disease or cancer. Symptoms include abdominal swelling, pain, nausea, and loss of appetite.",
+    "medicine": "Treatment involves managing the underlying cause, diuretics to reduce fluid buildup, and in some cases, paracentesis to remove excess fluid."
+},"abdominal pain,fever,jaundice,weight loss": {
+    "disease": "Amoebic Liver Abscess",
+    "description": "An amoebic liver abscess is a type of liver infection caused by Entamoeba histolytica. Symptoms include abdominal pain, fever, jaundice, and weight loss.",
+    "medicine": "Treatment typically involves antibiotics such as metronidazole or tinidazole, and sometimes surgical drainage may be necessary."
+},
+"abdominal pain,diarrhea,fatigue,fever": {
+    "disease": "Adenovirus Infection",
+    "description": "Adenovirus infection can cause a range of symptoms including abdominal pain, diarrhea, fatigue, and fever. It often affects the respiratory or gastrointestinal systems.",
+    "medicine": "Management includes supportive care such as hydration and rest. Antiviral medications are not typically used unless the infection is severe or involves specific strains."
+},
+"joint pain,skin rash,fever,muscle aches": {
+    "disease": "Alkaptonuria",
+    "description": "Alkaptonuria is a rare metabolic disorder characterized by the accumulation of homogentisic acid in the body. Symptoms include joint pain, skin rash, fever, and muscle aches. The condition can lead to arthritis and darkening of the urine.",
+    "medicine": "Treatment focuses on managing symptoms and may include pain relief, physical therapy, and dietary changes to manage the buildup of homogentisic acid."
+},
+"skin lesions,fever,headache,swelling": {
+    "disease": "African Tick Bite Fever",
+    "description": "African Tick Bite Fever is caused by Rickettsia species transmitted through tick bites. Symptoms include skin lesions, fever, headache, and swelling at the site of the bite.",
+    "medicine": "Antibiotics such as doxycycline are commonly used for treatment. Avoiding tick bites and prompt medical attention are essential."
 }
+,"persistent cough,night sweats,fever,weight loss": {
+    "disease": "Brucellosis",
+    "description": "Brucellosis is an infection caused by Brucella bacteria, often contracted from unpasteurized dairy products or contact with infected animals. Symptoms include a persistent cough, night sweats, fever, and weight loss.",
+    "medicine": "Treatment involves a combination of antibiotics such as doxycycline and rifampin. Avoiding raw dairy products and proper handling of animals are preventive measures."
+},
+"muscle weakness,fatigue,swallowing difficulties,weight loss": {
+    "disease": "Bulbar Palsy",
+    "description": "Bulbar palsy is a condition affecting the nerves responsible for speaking, swallowing, and chewing. Symptoms include muscle weakness, fatigue, swallowing difficulties, and weight loss.",
+    "medicine": "Management includes supportive care, speech and swallowing therapy, and medications to manage symptoms and underlying conditions."
+}
+,"joint pain,fever,skin rash,muscle weakness": {
+    "disease": "Chikungunya",
+    "description": "Chikungunya is a viral infection transmitted by mosquitoes. Symptoms include joint pain, fever, skin rash, and muscle weakness. The disease is often associated with long-term joint pain.",
+    "medicine": "There is no specific antiviral treatment; management focuses on relieving symptoms with pain relievers and anti-inflammatory medications. Preventing mosquito bites is crucial."
+},
+"fever,sore throat,red eyes,rash": {
+    "disease": "Coxsackievirus Infection",
+    "description": "Coxsackievirus infection can cause a range of symptoms including fever, sore throat, red eyes, and rash. It often affects children and can lead to hand, foot, and mouth disease.",
+    "medicine": "Treatment is supportive, including hydration and pain relief. Antiviral medications are not usually necessary, but maintaining good hygiene is important to prevent spread."
+},
+"abdominal pain,fever,diarrhea,jaundice": {
+    "disease": "Cryptosporidiosis",
+    "description": "Cryptosporidiosis is a parasitic infection caused by Cryptosporidium species. Symptoms include abdominal pain, fever, diarrhea, and jaundice. It is often associated with contaminated water.",
+    "medicine": "Treatment includes supportive care and anti-parasitic medications such as nitazoxanide. Ensuring access to clean water and proper hygiene practices are preventive measures."
+},"persistent cough,fever,shortness of breath,fatigue": {
+    "disease": "Diphtheria",
+    "description": "Diphtheria is a bacterial infection caused by Corynebacterium diphtheriae. Symptoms include a persistent cough, fever, shortness of breath, and fatigue. It can cause severe throat inflammation and systemic symptoms.",
+    "medicine": "Treatment involves antibiotics such as penicillin or erythromycin and administration of diphtheria antitoxin. Vaccination is the primary preventive measure."
+},
+"muscle pain,fever,rash,swelling": {
+    "disease": "Dengue Fever",
+    "description": "Dengue fever is a viral illness transmitted by mosquitoes, characterized by muscle pain, fever, rash, and swelling. It can lead to severe complications such as dengue hemorrhagic fever or dengue shock syndrome.",
+    "medicine": "Supportive care is essential, including hydration and pain relief. Severe cases may require hospitalization. Preventing mosquito bites is crucial."
+},
+"fever,headache,joint pain,muscle pain": {
+    "disease": "Dermatomyositis",
+    "description": "Dermatomyositis is an inflammatory disease characterized by muscle weakness and a distinctive skin rash. Symptoms include fever, headache, joint pain, and muscle pain.",
+    "medicine": "Treatment includes corticosteroids and immunosuppressive drugs. Physical therapy and managing symptoms are important for improving quality of life."
+},
+"fever,abdominal pain,joint pain,rash": {
+    "disease": "Erythema Infectiosum",
+    "description": "Erythema infectiosum, also known as fifth disease, is caused by parvovirus B19. Symptoms include fever, abdominal pain, joint pain, and a characteristic rash that appears as a 'slapped cheek' appearance in children.",
+    "medicine": "Treatment is supportive, including rest and hydration. Antiviral medications are not usually needed, and the disease typically resolves on its own."
+},
+"persistent cough,fever,chest pain,difficulty breathing": {
+    "disease": "Empyema",
+    "description": "Empyema is a collection of pus in the pleural space of the lungs, usually resulting from an infection such as pneumonia. Symptoms include a persistent cough, fever, chest pain, and difficulty breathing.",
+    "medicine": "Treatment involves antibiotics and, in some cases, surgical drainage of the pus. Management of underlying infections and supportive care are also important."
+}
+,"fever,headache,muscle pain,skin rash": {
+    "disease": "Febrile Neutropenia",
+    "description": "Febrile neutropenia is a condition where a patient with low neutrophil counts develops a fever. It is often seen in cancer patients undergoing chemotherapy. Symptoms include fever, headache, muscle pain, and skin rash.",
+    "medicine": "Treatment involves prompt administration of broad-spectrum antibiotics and supportive care. Managing underlying cancer or condition is crucial."
+},
+"persistent fever,rash,swollen lymph nodes,joint pain": {
+    "disease": "Fever of Unknown Origin (FUO)",
+    "description": "Fever of unknown origin is a diagnosis given when a prolonged fever persists without an identifiable cause despite extensive investigation. Symptoms include persistent fever, rash, swollen lymph nodes, and joint pain.",
+    "medicine": "Treatment depends on the underlying cause once identified. Empirical treatment and supportive care are provided until a diagnosis is made."
+}
+,"fever,headache,abdominal pain,joint pain": {
+    "disease": "Granulomatosis with Polyangiitis",
+    "description": "Granulomatosis with polyangiitis (Wegener's granulomatosis) is a type of vasculitis that affects blood vessels and organs. Symptoms include fever, headache, abdominal pain, and joint pain.",
+    "medicine": "Treatment involves immunosuppressive medications such as corticosteroids and cytotoxic drugs. Management of symptoms and regular monitoring are important."
+},
+"cough,fever,chest pain,difficulty breathing": {
+    "disease": "Goodpasture's Syndrome",
+    "description": "Goodpasture's syndrome is a rare autoimmune disease that attacks the lungs and kidneys. Symptoms include cough, fever, chest pain, and difficulty breathing. It can lead to kidney failure if not treated.",
+    "medicine": "Treatment includes immunosuppressive drugs and plasmapheresis. Managing kidney function and supportive care are also necessary."
+}
+,"fever,skin rash,swollen lymph nodes,joint pain": {
+    "disease": "Henoch-Schönlein Purpura",
+    "description": "Henoch-Schönlein purpura is a small-vessel vasculitis that often follows a respiratory infection. Symptoms include fever, skin rash, swollen lymph nodes, and joint pain.",
+    "medicine": "Treatment focuses on managing symptoms with medications such as corticosteroids. Most cases resolve with supportive care and symptom management."
+},
+"muscle pain,fever,headache,fatigue": {
+    "disease": "Hypereosinophilia",
+    "description": "Hypereosinophilia is a condition characterized by an elevated level of eosinophils in the blood, which can lead to inflammation and damage to various organs. Symptoms include muscle pain, fever, headache, and fatigue.",
+    "medicine": "Treatment involves corticosteroids and other immunosuppressive drugs. Addressing underlying conditions and monitoring eosinophil levels are key aspects of management."
+},"fever,skin rash,joint pain,muscle weakness": {
+    "disease": "Infectious Mononucleosis",
+    "description": "Infectious mononucleosis, often caused by Epstein-Barr virus, presents with fever, skin rash, joint pain, and muscle weakness. It is also known as mono or glandular fever.",
+    "medicine": "Supportive care is the main treatment, including rest, hydration, and pain relief. Severe cases may require corticosteroids to reduce inflammation."
+},
+"fever,chronic cough,weight loss,night sweats": {
+    "disease": "Idiopathic Pulmonary Fibrosis",
+    "description": "Idiopathic pulmonary fibrosis is a chronic lung disease with unknown cause that leads to progressive scarring of lung tissue. Symptoms include fever, chronic cough, weight loss, and night sweats.",
+    "medicine": "Treatment includes antifibrotic drugs such as pirfenidone or nintedanib, and supportive care such as oxygen therapy and pulmonary rehabilitation."
+}
+,"fever,skin rash,swelling,abdominal pain": {
+    "disease": "Jardiance Syndrome",
+    "description": "Jardiance Syndrome is not a widely recognized medical condition but could refer to adverse reactions associated with the use of the medication Jardiance. Symptoms may include fever, skin rash, swelling, and abdominal pain.",
+    "medicine": "Treatment involves discontinuing the medication and managing symptoms with supportive care. Alternative medications may be considered depending on the condition being treated."
+},
+"fever,rash,swelling,joint pain": {
+    "disease": "Juvenile Idiopathic Arthritis (JIA)",
+    "description": "Juvenile idiopathic arthritis is an inflammatory arthritis in children. Symptoms include fever, rash, swelling, and joint pain. It can affect one or more joints and may cause long-term joint damage if untreated.",
+    "medicine": "Treatment includes nonsteroidal anti-inflammatory drugs (NSAIDs), disease-modifying antirheumatic drugs (DMARDs), and biologics. Physical therapy and regular monitoring are also important."
+}
+
+
+
+
+
 }
     
 

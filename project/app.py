@@ -4,7 +4,6 @@ from textblob import Word
 from difflib import get_close_matches
 import re
 
-
 app = Flask(__name__)
 
 with open('disease.json') as f:
